@@ -1,0 +1,36 @@
+{
+  "source_archive": "AX7021B_C_Contribution_20261103.zip",
+  "source_archive_sha256": "46c582c7d9926f30e4482be76f323e7972c35bbbe52d051e3966b4e21798b7ae",
+  "source_files": 59,
+  "source_hashes_verified": 58,
+  "source_checksum_file": "SHA256SUMS.txt",
+  "source_files_preserved": true,
+  "remote_parent": "b0bceb0f36619a4f629958a31be248f3dadc1562",
+  "vivado_or_fpga_run_in_this_merge": false,
+  "python_syntax_files": 9,
+  "offline_tests_exit_code": 0,
+  "offline_tests_summary": [
+    "----------------------------------------------------------------------",
+    "Ran 25 tests in 5.052s",
+    "",
+    "OK"
+  ],
+  "golden_frame_checks": [
+    {
+      "case": "random_33x31",
+      "pixels": 1023,
+      "differences": 0
+    },
+    {
+      "case": "random_640x480",
+      "pixels": 307200,
+      "differences": 0
+    }
+  ],
+  "pixel_csv_rows": 32,
+  "total_reference_pixels": 308255,
+  "rtl_copies_identical": true,
+  "rtl_simulation_in_this_merge": false,
+  "python_version": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0"
+}

@@ -1,0 +1,17 @@
+{
+  "HDMI_CANDIDATE.bit": {
+    "sha256": "1e4cff15cc13dacb6e5d7ead69a5904220dffe741fdb4702a2c42f8c9f0286ff",
+    "bytes": 4045690,
+    "provenance": "A HDMI handoff archive 2026-10-29; matched independent hardware export"
+  },
+  "HDMI_CANDIDATE.hwh": {
+    "sha256": "44359583dc3d26701329ca97e6b224bfaea4f33a2a78ab06e694e76220980fb9",
+    "bytes": 563601,
+    "provenance": "A HDMI handoff archive 2026-10-29; matched independent hardware export"
+  },
+  "HDMI_CANDIDATE.xsa": {
+    "sha256": "2f0390ae0965bd18af99207c454f764c88c35f0f6388c363fb4abc47b072f6b3",
+    "bytes": 625966,
+    "provenance": "A HDMI handoff archive 2026-10-29; matched independent hardware export"
+  }
+}

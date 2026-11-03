@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-03",
+  "tool": "Vivado 2025.2 xsim and synth_design",
+  "device": "xc7z020clg484-2",
+  "source": "hardware/gray_ip public subset copied to isolated scratch directory",
+  "simulation": {
+    "status": "PASS",
+    "cases": ["pixel_vectors.csv", "random_33x31", "random_640x480"],
+    "frames": 3,
+    "pixels": 308255,
+    "golden_mismatches": 0,
+    "reset_abort": "PASS",
+    "output_stall_cycles": 308251,
+    "input_stall_cycles": 308250,
+    "simultaneous_input_output_cycles": 154129
+  },
+  "standalone_synthesis": {
+    "status": "PASS",
+    "errors": 0,
+    "critical_warnings": 0,
+    "warnings": 26,
+    "lut": 4,
+    "ff": 10,
+    "dsp48e1": 3,
+    "bram_tiles": 0,
+    "timing_constrained": false,
+    "warning_note": "Unused input X byte/TKEEP bits and constant output TKEEP are expected for BGRX32 to Gray8; review full original tool log internally."
+  },
+  "scope": "This is an actual new public-subset run, distinct from the historical 32-frame run and from board DMA validation."
+}

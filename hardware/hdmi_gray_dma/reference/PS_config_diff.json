@@ -1,0 +1,38 @@
+{
+  "PCW_EN_EMIO_I2C0": {
+    "verified_gray": "0",
+    "hdmi_candidate": "1"
+  },
+  "PCW_EN_I2C0": {
+    "verified_gray": "0",
+    "hdmi_candidate": "1"
+  },
+  "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
+    "verified_gray": "50",
+    "hdmi_candidate": "100"
+  },
+  "PCW_I2C0_I2C0_IO": {
+    "verified_gray": null,
+    "hdmi_candidate": "EMIO"
+  },
+  "PCW_I2C0_PERIPHERAL_ENABLE": {
+    "verified_gray": "0",
+    "hdmi_candidate": "1"
+  },
+  "PCW_I2C0_RESET_ENABLE": {
+    "verified_gray": null,
+    "hdmi_candidate": "0"
+  },
+  "PCW_I2C_PERIPHERAL_FREQMHZ": {
+    "verified_gray": null,
+    "hdmi_candidate": "111.111115"
+  },
+  "PCW_I2C_RESET_SELECT": {
+    "verified_gray": null,
+    "hdmi_candidate": "Share reset pin"
+  },
+  "PCW_PACKAGE_NAME": {
+    "verified_gray": "clg485",
+    "hdmi_candidate": "clg484"
+  }
+}

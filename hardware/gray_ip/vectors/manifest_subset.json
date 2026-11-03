@@ -1,0 +1,52 @@
+[
+  {
+    "name": "random_33x31",
+    "height": 31,
+    "width": 33,
+    "note": "seed 20261027",
+    "version": "bgr_gray_q15_v1",
+    "opencv_comparison": {
+      "pixels": 1023,
+      "max_abs_error": 0,
+      "mean_abs_error": 0.0,
+      "different_pixels": 0,
+      "outside_tolerance": 0,
+      "tolerance": 1,
+      "passed": true
+    },
+    "sha256": {
+      "expected_gray.bin": "26997741040a3fcb8ff89724919a1aa16f9a5b5897fe2e46230b98b21d150363",
+      "expected_gray.mem": "91311b1890c10ad59289e7688182409c277109c01f5310eb929caf885485e46a",
+      "expected_gray.png": "2d7094e72dbeef1aa823be8f31c025ffcbfaf0d04d3fd02e7db424d0049613aa",
+      "input_axis32.bin": "8caf10ee62bb40c416cc00da0cb4ecc049da0c926c9e1977e3892b9b72b76367",
+      "input_axis32.mem": "568d3cd300fc2d5defe8bdaee678db3efa5b67c17bae397ecc1e8b064e9db1ac",
+      "input_bgr24.bin": "fbfcaac25cf1052c5f56cf4f2796520cc4a0e04614819a6c94e5a341e9b2b8df",
+      "opencv_gray.png": "2d7094e72dbeef1aa823be8f31c025ffcbfaf0d04d3fd02e7db424d0049613aa"
+    }
+  },
+  {
+    "name": "random_640x480",
+    "height": 480,
+    "width": 640,
+    "note": "seed 20261027",
+    "version": "bgr_gray_q15_v1",
+    "opencv_comparison": {
+      "pixels": 307200,
+      "max_abs_error": 0,
+      "mean_abs_error": 0.0,
+      "different_pixels": 0,
+      "outside_tolerance": 0,
+      "tolerance": 1,
+      "passed": true
+    },
+    "sha256": {
+      "expected_gray.bin": "b274eb65e6f5829609e56c9caa2560662333d92d744954fa698d8b4368f4323b",
+      "expected_gray.mem": "a3add76753385e521d435033c059b3d0c505c9011f936c74300dcf4ebaebd0b6",
+      "expected_gray.png": "5b0e9884fe127689179a22157cb761a07ab2fe61b0d4bed7c0e5b13ee458ac3e",
+      "input_axis32.bin": "4a8efcdeb37b42158bf9a31793831627c875cb11c088b9762a8772014a20ab16",
+      "input_axis32.mem": "1178e6a33767d84f991d421dd816316ccad56f457c905d8f77859690fe8fe2a0",
+      "input_bgr24.bin": "7b7d4c851836abc7eebb9a683243606103a56a78fc50726ca75f77ab6aabb81a",
+      "opencv_gray.png": "5b0e9884fe127689179a22157cb761a07ab2fe61b0d4bed7c0e5b13ee458ac3e"
+    }
+  }
+]

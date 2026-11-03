@@ -1,0 +1,31 @@
+test_a_slow_detection_does_not_gate_preview (test_async.AsyncTests) ... ok
+test_b_long_detection_keeps_latest_frame_only (test_async.AsyncTests) ... ok
+test_c_camera_disconnect_reconnect_is_bounded (test_async.AsyncTests) ... ok
+test_c_reconnect_limit_stops (test_async.AsyncTests) ... ok
+test_d_dma_timeout_retains_buffer_owner (test_async.AsyncTests) ... ok
+test_e_hdmi_error_stops_all_workers_without_deadlock (test_async.AsyncTests) ... ok
+test_e_unsafe_vdma_stop_retains_scan_buffers (test_async.AsyncTests) ... ok
+test_f_thousands_of_frames_bound_queue_and_metrics_memory (test_async.AsyncTests) ... STRESS_MEMORY before=0 after=605851 peak=635029 delta=605851
+ok
+test_g_repeated_runs_leave_no_threads_or_lock_owner (test_async.AsyncTests) ... ok
+test_h_board_preprocessing_matches_v1_and_owns_800x600_frame (test_async.AsyncTests) ... ok
+test_h_frame_ownership_copy_survives_camera_reuse (test_async.AsyncTests) ... ok
+test_h_result_age_shape_gap_and_letterbox_mapping (test_async.AsyncTests) ... ok
+test_h_unannotated_preview_reuses_readonly_owned_frame (test_async.AsyncTests) ... ok
+test_100_frames_no_per_frame_reinitialization (test_live.LiveTests) ... ok
+test_camera_bounded_reopen_and_detection_failure_keeps_display (test_live.LiveTests) ... ok
+test_camera_recovery_limit_stops (test_live.LiveTests) ... ok
+test_cpu_mode_has_no_pl_gray_call (test_live.LiveTests) ... ok
+test_dma_failure_stops_without_display_fallback (test_live.LiveTests) ... ok
+test_hardware_hashes_match_packaged_verified_artifacts (test_live.LiveTests) ... skipped 'Existing repository HDMI artifact not present in C source-only tree'
+test_letterbox_keeps_aspect_and_coordinates (test_live.LiveTests) ... ok
+test_main_initializes_and_releases_each_owner_once (test_live.LiveTests) ... skipped 'Existing repository HDMI artifact not present in C source-only tree'
+test_pl_backend_mismatch_is_fatal (test_live.LiveTests) ... ok
+test_single_instance_lock (test_live.LiveTests) ... ok
+test_unsafe_buffers_release_only_after_confirmed_halt (test_live.LiveTests) ... ok
+test_vdma_failure_stops (test_live.LiveTests) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 5.701s
+
+OK (skipped=2)

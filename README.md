@@ -2,7 +2,7 @@
 
 FPGA大赛作品代码提交版，整理日期2026-11-03。默认流程：**Haar人脸检测 → NCNN640安全帽模型 → 同帧一对一关联 → 标注人脸及佩戴状态**。
 
-本仓库提供当前可用算法、权重、AX7021B接入补丁、灰度转换参考和已有HDMI候选产物。算法可以在PC独立运行；整板运行还依赖A端已有PYNQ环境和外部异步相机工程，具体缺项见下文。
+本仓库提供当前可用算法、权重、AX7021B接入补丁、灰度转换参考和已有HDMI候选产物。算法可以在PC独立运行；C端灰度RTL、DMA/HDMI BD Tcl和原始连续软件已补入；整板运行仍依赖A端PYNQ兼容入口及部分外部组件，具体缺项见下文。
 
 ## 获取与快速运行
 
@@ -30,7 +30,10 @@ python infer.py --input /path/to/image.jpg --output outputs
 |[integration/a_original/](integration/a_original/)|A提供的原后台源码，作为参考；联合版本用algorithm/A_patch|
 |[integration/board_adaptation/](integration/board_adaptation/)|A提供的原始头导出工具与板端适配记录|
 |[integration/hdmi_candidate/](integration/hdmi_candidate/)|A提供的HDMI候选bit/hwh/xsa和PS控制源码|
-|[docs/](docs/)|性能诊断、质量回归、提交范围说明|
+|[hardware/](C_CONTRIBUTION.md)|C端灰度RTL/仿真、DMA与HDMI合并BD Tcl、XDC和IP封装|
+|[runtime/c_continuous_rc1/](runtime/c_continuous_rc1/README.md)|C原始异步/同步连续软件与离线Fake测试，非A最终兼容版本|
+|[verification/](verification/README.md)|C提供的历史验证摘要，以及本次合并的独立检查记录|
+|[docs/](docs/BUILD_VIVADO.md)|Vivado重建步骤、硬件架构、性能诊断与提交范围|
 
 灰度仿真向量已打包为pl_tools/golden_vectors.zip，包含26组图像和32个像素向量；解压后用于RTL比较，也可运行face_preproc_reference.py重新生成。
 
@@ -54,8 +57,21 @@ python board_benchmark.py --image /path/to/image.jpg --repeats 5
 
 PL灰度可通过run(frame_bgr, gray_image=..., original_shape=...)传入；原彩色图保留用于安全帽网络。当前A_patch走CPU路径，没有伪称已调用PL。
 
-**整板复现缺项**：A_patch仍依赖原/home/xilinx/A_compat_RC1/01_Async_Live中的camera_hdmi_async、async_pipeline及相应板端配置；它们不在本次收到的源文件内。HDMI候选资料没有完整Vivado BD/Tcl/约束/HDL源码；本仓库保留现有二进制产物，不保证能从零重新综合。灰度IP的RTL及DMA最终工程也未提供，不能以Python数值参考代替实际RTL。不要把本仓库描述为已完成从零重建的完整Vivado工程。
+## C端源码补充与复现边界
 
+本次新增[贡献索引](C_CONTRIBUTION.md)、[硬件架构](docs/HARDWARE_ARCHITECTURE.md)与[Vivado 2025.2构建说明](docs/BUILD_VIVADO.md)。灰度RTL和DMA BD Tcl现已提供；灰度输入BGRX32、输出Gray8，帧末TLAST，与HDMI行末TLAST分开。以下命令只在本地做Fake验证，不访问相机或FPGA：
+
+```bash
+python runtime/c_continuous_rc1/05_Tests/run_offline_tests.py
+```
+
+**运行版本要区分**：runtime/c_continuous_rc1是C的原始RC1，补齐了camera_hdmi_async/async_pipeline源码，但不含A后来的主线程Device.active_device兼容修复；不能直接把该目录冒充/home/xilinx/A_compat_RC1的最终板端入口。不要覆盖板端正在使用的A兼容版本。其余a_gray_dma_fast、pipeline_api等依赖及路径见[连续软件说明](runtime/c_continuous_rc1/README.md)。
+
+**硬件构建仍有依赖**：HDMI BD Tcl、XDC和灰度IP已补齐；Dynamic Clock第三方HDL仍需按[来源与哈希说明](hardware/hdmi_gray_dma/DYNAMIC_CLOCK_SOURCE.md)合法取得。公开树尚不能独立从零生成同一HDMI bit，新增Tcl重建也不等于已重新综合、实施或逐位验证现有候选产物。本次合并没有运行Vivado或开发板，包内历史结果与本次检查分别记录。
+
+本次合并检查：25项离线Fake测试全部通过；308,255个参考像素复算差异为0（不是RTL仿真或板端测量）。记录见[合并检查](verification/c_merge_checks_20261103.json)与[Fake测试日志](verification/c_merge_offline_tests.log)。
+
+原C包文件保持原始字节，SHA256SUMS.txt验证该贡献包的内容；根SHA256SUMS.json记录合并后的仓库全部提交文件，两者用途不同。
 ## 质量边界
 
 联合接口及结果一致性已经验证，现场识别可靠性尚未验收。原安全帽模型仍会把部分普通人脸误报为戴帽；Haar也会漏检小脸、侧脸、遮挡和背面。无脸时跳过安全帽模型，不表示现场无人或所有人安全。无法关联或证据不足时输出unknown。本项目不能作为已经通过验收的安全防护系统。

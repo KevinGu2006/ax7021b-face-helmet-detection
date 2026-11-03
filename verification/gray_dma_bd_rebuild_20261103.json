@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-03",
+  "tool": "Vivado 2025.2 Batch",
+  "source": "hardware/gray_dma/rebuild_gray_project.tcl and rebuild_bd.tcl",
+  "output": "new isolated scratch project, excluded from upload",
+  "bd_created": true,
+  "custom_ip_loaded": true,
+  "wrapper_generated": true,
+  "hwh_generated": true,
+  "validate_design": "PASS",
+  "synthesis_executed": false,
+  "implementation_executed": false,
+  "bitstream_generated": false,
+  "warnings": "HP0 AXI ID width truncation and PS reset association metadata were emitted; see original implementation notes."
+}

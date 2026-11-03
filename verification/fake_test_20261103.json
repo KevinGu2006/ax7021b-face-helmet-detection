@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-03",
+  "platform": "Windows x64, Python 3.10.20, NumPy 2.2.6",
+  "command": "python runtime/c_continuous_rc1/05_Tests/run_offline_tests.py",
+  "discovered": 25,
+  "passed": 23,
+  "skipped": 2,
+  "failed": 0,
+  "skip_reason": "The source-only additions tree intentionally does not duplicate the already-public HDMI_CANDIDATE bit/hwh files; two tests require those binaries. Re-run after merging into the full repository and confirm 25 pass.",
+  "not_board_evidence": true
+}

@@ -6,3 +6,13 @@
 *.sh text eol=lf
 .gitignore text eol=lf
 .gitattributes text eol=lf
+
+# Preserve C contribution bytes so the supplied SHA256SUMS.txt stays valid.
+/hardware/** -text
+/runtime/c_continuous_rc1/** -text
+/verification/** -text
+/docs/BUILD_VIVADO.md -text
+/docs/HARDWARE_ARCHITECTURE.md -text
+/C_CONTRIBUTION.md -text
+/UPLOAD_GUIDE.md -text
+/SHA256SUMS.txt -text
