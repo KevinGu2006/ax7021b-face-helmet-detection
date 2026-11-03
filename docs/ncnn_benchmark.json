@@ -1,0 +1,29 @@
+{
+  "confidence": 0.4,
+  "classes": {
+    "helmet": {
+      "tp": 189,
+      "fp": 10,
+      "fn": 58,
+      "precision": 0.949748743718593,
+      "recall": 0.7651821862348178,
+      "f1": 0.8475336322869955
+    },
+    "no_helmet": {
+      "tp": 53,
+      "fp": 14,
+      "fn": 14,
+      "precision": 0.7910447761194029,
+      "recall": 0.7910447761194029,
+      "f1": 0.7910447761194029
+    }
+  },
+  "unknown_candidates": 105,
+  "false_safe_matches": 0,
+  "macro_f1": 0.8192892042031992,
+  "images": 100,
+  "exact_box_state_agreements": 100,
+  "model_median_ms": 62.75230000028387,
+  "total_median_ms": 66.32575001276564,
+  "board_tested": false
+}

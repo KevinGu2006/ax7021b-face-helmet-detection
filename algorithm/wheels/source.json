@@ -1,0 +1,12 @@
+{
+  "url": "https://files.pythonhosted.org/packages/f3/aa/9fe5c9872100c7bee24d54f74e8140145c6cf45ff6faa37e90d41c61020f/ncnn-1.0.20261020-cp310-cp310-manylinux_2_31_armv7l.whl",
+  "sha256": "ab92478224a92d34b93fd2ac17e674d118e21b8a8fbf92a0ef3a8e59ed9381a8",
+  "requires_dist": [
+    "numpy",
+    "tqdm",
+    "requests",
+    "portalocker",
+    "opencv-python; extra == \"opencv\""
+  ],
+  "note": "Official PyPI wheel; not installed/tested on this board. Needs CPython3.10 ARMv7l/glibc>=2.31."
+}

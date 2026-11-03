@@ -1,0 +1,4 @@
+# PC local inference. Board: reuse existing numpy/OpenCV, install only matching local NCNN wheel.
+numpy==1.26.4
+opencv-python==4.11.0.86
+ncnn==1.0.20261020

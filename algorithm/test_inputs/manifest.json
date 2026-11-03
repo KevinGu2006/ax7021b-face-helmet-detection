@@ -1,0 +1,194 @@
+[
+  {
+    "file": "000_baboon.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "1a1dd18d78eec44420af3b0b7f08ee3d41c982916cae3ce203d7ff35d754cc0f",
+    "source_url": "https://raw.githubusercontent.com/opencv/opencv/71d3237a093b60a27601c20e9ee6c3e52154e8b1/samples/data/baboon.jpg"
+  },
+  {
+    "file": "001_building.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "742a1baad62ac82e91e718e77eedf7e85c2eddc4badfb8c87c6cbc86c45a8b07",
+    "source_url": "https://raw.githubusercontent.com/opencv/opencv/71d3237a093b60a27601c20e9ee6c3e52154e8b1/samples/data/building.jpg"
+  },
+  {
+    "file": "002_david1.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "378293e79d6802032c9f3596d2a70ab41ea3f52fc6c8b2f8ef5971541f9b32b4",
+    "source_url": "https://raw.githubusercontent.com/opencv/opencv_extra/dd1fbd0717ef4d83f86899b4144fdd9bc0364a5f/testdata/cv/face/david1.jpg"
+  },
+  {
+    "file": "003_david2.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "b39930fb7d57f4a14edc55d94ba1a002e9bffe323315b0423c223f7321a4e3cc",
+    "source_url": "https://raw.githubusercontent.com/opencv/opencv_extra/dd1fbd0717ef4d83f86899b4144fdd9bc0364a5f/testdata/cv/face/david2.jpg"
+  },
+  {
+    "file": "004_detect.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "07065a5bcb5aa5579b48f2152e64f30290d57987c6f1e7038b063ae43bdd6ff0",
+    "source_url": "https://raw.githubusercontent.com/opencv/opencv_extra/dd1fbd0717ef4d83f86899b4144fdd9bc0364a5f/testdata/cv/face/detect.jpg"
+  },
+  {
+    "file": "005_fruits.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "9c031d80a1c52da5eca790db896baffec6a7e52bf786cdb7bbfca5c7f880e6a1",
+    "source_url": "https://raw.githubusercontent.com/opencv/opencv/71d3237a093b60a27601c20e9ee6c3e52154e8b1/samples/data/fruits.jpg"
+  },
+  {
+    "file": "006_lena.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "7de7ed51a1594fff247f4cae2301eceacf5313d6011e37b4a4c8733f7bb72c07",
+    "source_url": "https://raw.githubusercontent.com/opencv/opencv/71d3237a093b60a27601c20e9ee6c3e52154e8b1/samples/data/lena.jpg"
+  },
+  {
+    "file": "007_messi5.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "1d570e49654e84c7a943918537bd9e5e1ef82920152e147c834006e235be97c9",
+    "source_url": "https://raw.githubusercontent.com/opencv/opencv/71d3237a093b60a27601c20e9ee6c3e52154e8b1/samples/data/messi5.jpg"
+  },
+  {
+    "file": "008_addams-family.png",
+    "independent_face_head_pair_labels": false,
+    "sha256": "8e5ca90a3702f2c208385815c4d476a2002eb7cef2069a7da39e1dea99f85e00",
+    "source_url": "https://raw.githubusercontent.com/opencv/opencv_extra/dd1fbd0717ef4d83f86899b4144fdd9bc0364a5f/testdata/cv/cascadeandhog/images/addams-family.png"
+  },
+  {
+    "file": "009_audrybt1.png",
+    "independent_face_head_pair_labels": false,
+    "sha256": "adb67ede8621f65144bd273512021b09bba4a736f6d2ce34c31b00badd63c498",
+    "source_url": "https://raw.githubusercontent.com/opencv/opencv_extra/dd1fbd0717ef4d83f86899b4144fdd9bc0364a5f/testdata/cv/cascadeandhog/images/audrybt1.png"
+  },
+  {
+    "file": "010_bttf301.png",
+    "independent_face_head_pair_labels": false,
+    "sha256": "ec79ef3deb58ee08f927c3746e1a3ba3687289c956acf7c4958be028cdd56f03",
+    "source_url": "https://raw.githubusercontent.com/opencv/opencv_extra/dd1fbd0717ef4d83f86899b4144fdd9bc0364a5f/testdata/cv/cascadeandhog/images/bttf301.png"
+  },
+  {
+    "file": "011_er.png",
+    "independent_face_head_pair_labels": false,
+    "sha256": "c232b8830623d924c518183cd005f7ff7d7b735e19c1cd26a2a59613d452a3d4",
+    "source_url": "https://raw.githubusercontent.com/opencv/opencv_extra/dd1fbd0717ef4d83f86899b4144fdd9bc0364a5f/testdata/cv/cascadeandhog/images/er.png"
+  },
+  {
+    "file": "012_0268.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "ba2d4da9c9011de21dd026ef145ad98b2005cfc08e0c20504c9f5eb8ecfac41a",
+    "dataset_source": "keremberke/hard-hat-detection; see dataset_manifest.json"
+  },
+  {
+    "file": "013_0832.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "178ee9446dcda28df6aa7d9e76af46858ca169bf0ce547cda9f25e35a787544e",
+    "dataset_source": "keremberke/hard-hat-detection; see dataset_manifest.json"
+  },
+  {
+    "file": "014_1268.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "73060ddd6c02cad8399702088141f9697cce3c515313b3a0f7c15d85af02aa85",
+    "dataset_source": "keremberke/hard-hat-detection; see dataset_manifest.json"
+  },
+  {
+    "file": "015_1251.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "cd748fd6ca269c58bcb09fa874417a92c872c5eef2fac4636d25472ee705a1f5",
+    "dataset_source": "keremberke/hard-hat-detection; see dataset_manifest.json"
+  },
+  {
+    "file": "016_0423.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "df82251af0bdf33e49cf4ced0b765b30905902a8b26db1cf3308fc763cec52e7",
+    "dataset_source": "keremberke/hard-hat-detection; see dataset_manifest.json"
+  },
+  {
+    "file": "017_1938.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "44e9c3a9288652fc31454ea507dc3b5d375ed47437dc291083b1e9a40a6252da",
+    "dataset_source": "keremberke/hard-hat-detection; see dataset_manifest.json"
+  },
+  {
+    "file": "018_0613.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "9a0e0a8e54681a8e1f64ba40052865a0d90a6f2640cb1c8436dab0ba147eecec",
+    "dataset_source": "keremberke/hard-hat-detection; see dataset_manifest.json"
+  },
+  {
+    "file": "019_0549.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "ab3059efe12f9a9d33d77fdf8062b4fb27afae18838906d72f4d0240dbe0176f",
+    "dataset_source": "keremberke/hard-hat-detection; see dataset_manifest.json"
+  },
+  {
+    "file": "020_1802.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "b8c4f339cc7dde05bd43c66187c86b834dbc6932f823a2b2f08e0ffe73383269",
+    "dataset_source": "keremberke/hard-hat-detection; see dataset_manifest.json"
+  },
+  {
+    "file": "021_0540.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "6565e657e9354cf5b5950b508995d3acd688cad6d04b210b02d5f96d79ef3078",
+    "dataset_source": "keremberke/hard-hat-detection; see dataset_manifest.json"
+  },
+  {
+    "file": "022_1812.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "d08db881e7f1385276f859ebb087a93e962fc744ecbd764a5b6f515f8cce6fdc",
+    "dataset_source": "keremberke/hard-hat-detection; see dataset_manifest.json"
+  },
+  {
+    "file": "023_0969.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "8de2b423d8ed92f1d3b78f48e22ea0ef403a3b75cc0dab0e802d99a2f853ce62",
+    "dataset_source": "keremberke/hard-hat-detection; see dataset_manifest.json"
+  },
+  {
+    "file": "024_0763.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "644ab28eed3a425e30b6e5be0ea84656f103012756433c2ecf69b35307bcafe7",
+    "dataset_source": "keremberke/hard-hat-detection; see dataset_manifest.json"
+  },
+  {
+    "file": "025_0147.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "5197f7e55b8c4731fd6d5a3a7bca3bada2ba0f60670c0b91961601d9067c11a6",
+    "dataset_source": "keremberke/hard-hat-detection; see dataset_manifest.json"
+  },
+  {
+    "file": "026_0531.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "3bf03e2e0bd3509342bbcdddd4f9432d0ec7bd74954f3899c3dda47ef8712fe6",
+    "dataset_source": "keremberke/hard-hat-detection; see dataset_manifest.json"
+  },
+  {
+    "file": "027_0042.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "965eea30880e3c9b6f59059cca0e24cc555ff3d1b0cf0373d3f77e767247832d",
+    "dataset_source": "keremberke/hard-hat-detection; see dataset_manifest.json"
+  },
+  {
+    "file": "028_0603.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "f2121728dd7a3fa98033e4479e4ffb7ffb9bc3c4d217b3cf62706b2e6f82287a",
+    "dataset_source": "keremberke/hard-hat-detection; see dataset_manifest.json"
+  },
+  {
+    "file": "029_0975.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "537302335fdccf2003a7f42988b758d0d30ee73a2654ccae35907324a3901d66",
+    "dataset_source": "keremberke/hard-hat-detection; see dataset_manifest.json"
+  },
+  {
+    "file": "030_0693.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "92dde3b70976647f90eccb71afcdb8226ecc5bbff7fe77879e9cf0666edd11a8",
+    "dataset_source": "keremberke/hard-hat-detection; see dataset_manifest.json"
+  },
+  {
+    "file": "031_1997.jpg",
+    "independent_face_head_pair_labels": false,
+    "sha256": "f0a2f40e85b52a4373abb09e45ecd8ef52fcffea2c778809cda94c3faa6d9b31",
+    "dataset_source": "keremberke/hard-hat-detection; see dataset_manifest.json"
+  }
+]

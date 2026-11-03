@@ -1,0 +1,10 @@
+{
+  "source_sha256": "3b86b658f0d42e9f5f8e91e0f23e143253e3dbc0a961e92e4624a8befc8a186d",
+  "changes": [
+    "Import combined algorithm from sibling directory or explicit B_ALGORITHM_DIR",
+    "Record face_count and complete combined record",
+    "Update task label"
+  ],
+  "hardware_or_locks_changed": false,
+  "board_tested": false
+}

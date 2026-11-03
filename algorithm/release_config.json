@@ -1,0 +1,35 @@
+{
+  "model": "models/helmet640.onnx",
+  "confidence": 0.4,
+  "backend": "ort",
+  "candidate": 0.15,
+  "min_head": 16,
+  "conflict_margin": 0.15,
+  "selected_model": "nano",
+  "model_sha256": "1df4b82cd69f345acb16e8faf74ae109c7edeb320d33179d2e8836765a715e8f",
+  "calibration": {
+    "confidence": 0.4,
+    "classes": {
+      "helmet": {
+        "tp": 26,
+        "fp": 2,
+        "fn": 7,
+        "precision": 0.9285714285714286,
+        "recall": 0.7878787878787878,
+        "f1": 0.8524590163934426
+      },
+      "no_helmet": {
+        "tp": 7,
+        "fp": 0,
+        "fn": 9,
+        "precision": 1.0,
+        "recall": 0.4375,
+        "f1": 0.6086956521739131
+      }
+    },
+    "unknown_candidates": 29,
+    "false_safe_matches": 0,
+    "macro_f1": 0.7305773342836779,
+    "model": "nano"
+  }
+}

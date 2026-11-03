@@ -1,0 +1,20 @@
+{
+  "board320": {
+    "model": "models/raw320.onnx",
+    "input_size": 320,
+    "sha256": "11948851afccc9fbbb0aaad56283a156db5fd8f0d1f8b030c5bffe1fdd777f16"
+  },
+  "board640": {
+    "model": "models/raw640.onnx",
+    "input_size": 640,
+    "sha256": "37b4d8c97ed316308d2ae8cc104d342132798e73b6a92a4d078c13babe1f7b78"
+  },
+  "ncnn640": {
+    "model": "models/ncnn640",
+    "input_size": 640,
+    "files": {
+      "model.ncnn.bin": "5ce16b56bcc85e63d01a5a7daa91a1cb3fecd4b503c9b39b9b1a3827ca9050eb",
+      "model.ncnn.param": "5bc51a285673b09e61685a22a0cb3a4ef94f76576b8a79ada7e0fc2ff1b70231"
+    }
+  }
+}

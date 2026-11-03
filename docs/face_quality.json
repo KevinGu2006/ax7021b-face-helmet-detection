@@ -1,0 +1,40 @@
+[
+  {
+    "config": "original640",
+    "split": "test",
+    "images": 21,
+    "tp": 12,
+    "fp": 6,
+    "fn": 127,
+    "precision": 0.6666666666666666,
+    "recall": 0.08633093525179857,
+    "f1": 0.15286624203821658,
+    "mean_image_ms": 163.86280952380952,
+    "p95_image_ms": 223.0812,
+    "fully_correct_images": 2,
+    "multi_images": 11,
+    "multi_all_faces_success": 0,
+    "negative_images": 1,
+    "negative_without_fp": 1,
+    "min_matched_gt_side_px": 41
+  },
+  {
+    "config": "balanced480",
+    "split": "test",
+    "images": 21,
+    "tp": 10,
+    "fp": 3,
+    "fn": 129,
+    "precision": 0.7692307692307693,
+    "recall": 0.07194244604316546,
+    "f1": 0.13157894736842105,
+    "mean_image_ms": 93.22241904761904,
+    "p95_image_ms": 148.801,
+    "fully_correct_images": 3,
+    "multi_images": 11,
+    "multi_all_faces_success": 0,
+    "negative_images": 1,
+    "negative_without_fp": 1,
+    "min_matched_gt_side_px": 41
+  }
+]

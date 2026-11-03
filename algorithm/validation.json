@@ -1,0 +1,13 @@
+{
+  "images": 32,
+  "face_exact_agreement": 32,
+  "helmet_exact_agreement_on_executed_frames": 21,
+  "no_face_model_skips": 11,
+  "matched_faces": 34,
+  "total_faces": 49,
+  "median_total_ms": 222.5663999997778,
+  "median_with_faces_ms": 284.0046999917831,
+  "board_tested": false,
+  "association_accuracy_measured": false,
+  "note": "PC regression only. Face/head pairing has no independent real pairing GT; synthetic unit tests do not prove field association accuracy."
+}
